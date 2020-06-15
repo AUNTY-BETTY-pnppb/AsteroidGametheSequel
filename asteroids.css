@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Righteous&display=swap');
+
+html {
+    background-color: #1a1a1d;
+}
+
+* {
+    margin: 0;
+    padding: .5em;
+}
+
+body {
+    font-family: 'lato', serif, "Times New Roman";
+    width: 70%;
+    margin: 1em auto;
+    color: #1a1a1d;
+    font-size: 16px;
+}
+
+#top h1 {
+    color: white;
+}
+
+caption {
+    font-family: 'Righteous', serif, "Times New Roman";
+}
+
+h1 {
+    font-family: 'Righteous', serif, "Times New Roman";
+    color: white;
+    text-align: center;
+    border-bottom: .2em solid #6f2232;
+}
+
+main {
+    background-color: #c3073F;
+    border: .5em solid #6f2232;
+    border-radius: .75em;
+    padding: 2em;
+}
+
+nav {
+    color: #1a1a1d;
+    padding: 1em;
+}
+
+a + nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: .5em;
+    padding: .5em;
+}
+
+a + nav li {
+    font-family: 'Righteous', serif, "Times New Roman";
+    display: inline;
+}
+
+a + nav a {
+    border: 0.0625em solid #6f2232;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: #c3073F;
+    margin: .5em;
+    text-decoration: none;
+}
+
+a + nav a:hover {
+    background-color: #950740;
+}
+
+a {
+    padding: 0;
+    color:#1a1a1d;
+}
+
+canvas {
+    display: block;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 115%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
+    border: 0.5em solid #950740;
+}
+
+#link img:hover {
+    transform: scale(1.1);
+}
+
+#link img {
+    transition: all 0.1s linear 0s;
+}
+
+figcaption {
+    text-align: center;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+table {
+    border-collapse: collapse;
+    margin:1em auto;
+    width:30%;
+    color: black;
+    background-color: #ac3b61;
+    text-align: center;
+}
+
+th {
+    background-color: #6f2232;
+}
+
+td, th {
+    vertical-align: middle;
+    border: 1px solid #1a1a1d;
+}
+
+tr:nth-child(even) {
+  background-color: #ee4c7c;
+}
+
+#highscore {
+    float: left;
+}
