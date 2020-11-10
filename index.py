@@ -25,7 +25,7 @@ try:
             sid = cookie['sid'].value
             session_store = open('sess_' + sid, writeback=True)
             if session_store.get('authenticated'):
-                connection = db.connect('cs1.ucc.ie', 'cab2', 'ahnga', 'cs6503_cs1106_cab2')
+                connection = db.connect()
                 cursor = connection.cursor(db.cursors.DictCursor)
                 cursor.execute("""SELECT max_points, total_points FROM users
                                   WHERE username = %s""", (session_store.get('username')))
