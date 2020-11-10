@@ -23,7 +23,7 @@ try:
             sid = cookie['sid'].value
             session_store = open('sess_' + sid, writeback=False)
             if session_store.get('authenticated'):
-                connection = db.connect("localhost", "cab2", "ahnga", "cs6503_cs1106_cab2")
+                connection = db.connect)
                 cursor = connection.cursor(db.cursors.DictCursor)
                 cursor.execute(""" SELECT username, max_points 
                                 FROM users 
