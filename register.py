@@ -24,7 +24,7 @@ if len(form_data) != 0:
         result = '<p>Error: passwords must be equal</p>'
     else:
         try:
-            connection = db.connect('cs1.ucc.ie', 'cab2', 'ahnga', 'cs6503_cs1106_cab2')
+            connection = db.connect()
             cursor = connection.cursor(db.cursors.DictCursor)
             cursor.execute("""SELECT * FROM users 
                               WHERE username = %s""", (username))
